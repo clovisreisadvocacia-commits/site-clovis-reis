@@ -1,0 +1,37 @@
+SITE PROVISÓRIO | CLÓVIS REIS ADVOCACIA
+
+Conteúdo:
+- index.html: página institucional e índice do blog
+- styles.css: identidade visual responsiva
+- script.js: menu mobile, busca de artigos e ano automático
+- artigos/: artigos iniciais
+
+COMO VISUALIZAR:
+Abra index.html no navegador.
+
+COMO PUBLICAR GRATUITAMENTE:
+1. Crie uma conta em um serviço de hospedagem estática, como Netlify ou GitHub Pages.
+2. Envie os arquivos desta pasta (não apenas o ZIP).
+3. A plataforma fornecerá um endereço provisório gratuito.
+4. Para usar clovisreisadvocacia.com.br posteriormente, será necessário configurar o domínio quando o controle estiver recuperado.
+
+ATENÇÃO ANTES DE PUBLICAR:
+- Confirmar se o endereço Rua do Paraíso, 146, Santo Antônio, Juazeiro-BA continua correto e se há atendimento presencial nesse local.
+- Confirmar telefone e canais oficiais.
+- Revisar os textos jurídicos, acrescentar identificação profissional/OAB conforme estratégia institucional.
+- Incluir política de privacidade e adequar eventual formulário/cookies antes de coletar dados.
+- Os artigos são textos introdutórios e precisam de revisão jurídica final antes de publicação.
+- Não inserir depoimentos, promessas de resultado ou chamadas incompatíveis com as regras de publicidade da OAB.
+
+Este pacote é um protótipo estático. Não está publicado na internet e não contém painel administrativo. Para editar, altere os arquivos HTML/CSS ou migre para WordPress depois.
+
+
+ATUALIZAÇÃO: foram acrescentados seis artigos novos à seção Artigos, com páginas individuais, links na página inicial, sitemap.xml e robots.txt. Antes da divulgação, revise os textos e confirme endereço, domínio e informações institucionais.
+
+
+ATUALIZAÇÃO SEO LOCAL:
+- Página específica atendimento-petrolina.html, informando expressamente que o atendimento em Petrolina é exclusivamente online e que a sede física permanece em Juazeiro-BA.
+- Metadados SEO e canonical da página inicial e da página Petrolina.
+- Dados estruturados LegalService com sede em nível de cidade (sem endereço de rua não confirmado) e área atendida em Juazeiro e Petrolina.
+- Sitemap atualizado para página inicial, página Petrolina e todos os artigos.
+- Antes da publicação, confira telefone, redes sociais e endereço físico exibido em outros trechos do site. Não divulgue endereço de rua sem confirmação.
