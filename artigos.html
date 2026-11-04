@@ -1,10 +1,399 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Blog Clóvis Reis Advocacia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blog Jurídico | Clóvis Reis Advocacia</title>
+
+<meta name="description" content="Informação jurídica sobre Direito das Famílias e Sucessões. Artigos sobre divórcio, partilha de bens, pensão alimentícia, guarda, herança e planejamento patrimonial.">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Blog Jurídico Clóvis Reis Advocacia">
+<meta property="og:description" content="Informação e orientação sobre Direito das Famílias e Sucessões.">
+<meta property="og:type" content="website">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #292929;
+  background: #f7f6f3;
+  line-height: 1.7;
+}
+
+header {
+  background: #172b38;
+  color: white;
+  padding: 25px 7%;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+header p {
+  color: #d5d5d5;
+  margin-bottom: 0;
+}
+
+nav {
+  background: #243c4a;
+  padding: 14px 7%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 22px;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 65px 7%;
+  background: #e9e6df;
+}
+
+.hero span {
+  color: #806b4d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  line-height: 1.3;
+}
+
+.hero h1 {
+  font-size: 38px;
+  max-width: 700px;
+  color: #172b38;
+}
+
+.hero p {
+  max-width: 650px;
+}
+
+main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 45px 20px;
+}
+
+.search {
+  margin-bottom: 25px;
+}
+
+.search input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.categories button {
+  padding: 10px 16px;
+  background: white;
+  border: 1px solid #c9c4bb;
+  color: #263b48;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.categories button:hover,
+.categories button.active {
+  background: #243c4a;
+  color: white;
+}
+
+.section-title {
+  color: #172b38;
+  font-size: 29px;
+  margin-bottom: 25px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.article {
+  background: white;
+  padding: 27px;
+  border: 1px solid #e6e1d8;
+  border-radius: 4px;
+}
+
+.article small {
+  color: #8b7355;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.article h3 {
+  color: #172b38;
+  font-size: 22px;
+}
+
+.article p {
+  color: #555;
+}
+
+.article a {
+  color: #806b4d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+.about {
+  margin-top: 55px;
+  padding: 35px;
+  background: #e9e6df;
+}
+
+footer {
+  background: #172b38;
+  color: white;
+  padding: 35px 7%;
+  text-align: center;
+}
+
+footer a {
+  color: #e3cba8;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+@media(max-width:600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+  }
+}
+</style>
 </head>
+
 <body>
-<h1>Blog Jurídico Clóvis Reis Advocacia</h1>
+
+<header>
+  <div class="logo">CLÓVIS REIS ADVOCACIA</div>
+  <p>Direito das Famílias e Sucessões</p>
+</header>
+
+<nav>
+  <a href="index.html">Início</a>
+  <a href="artigos.html">Blog Jurídico</a>
+  <a href="atendimento-petrolina.html">Atendimento</a>
+</nav>
+
+<section class="hero">
+  <span>Conhecimento jurídico</span>
+  <h1>Direito das Famílias e Sucessões: informação para decisões importantes.</h1>
+  <p>
+    Artigos, análises e informações sobre relações familiares,
+    patrimônio, divórcio, herança e planejamento sucessório.
+  </p>
+</section>
+
+<main>
+
+  <div class="search">
+    <input
+      type="search"
+      id="busca"
+      placeholder="Pesquisar artigos por assunto..."
+      aria-label="Pesquisar artigos"
+    >
+  </div>
+
+  <div class="categories">
+    <button class="active" data-category="todos">Todos</button>
+    <button data-category="divorcio">Divórcio</button>
+    <button data-category="partilha">Partilha de bens</button>
+    <button data-category="alimentos">Pensão alimentícia</button>
+    <button data-category="sucessoes">Sucessões</button>
+    <button data-category="guarda">Guarda e convivência</button>
+  </div>
+
+  <h2 class="section-title">Artigos jurídicos</h2>
+
+  <section class="articles" id="lista-artigos">
+
+    <article class="article" data-category="divorcio">
+      <small>Divórcio</small>
+      <h3>Divórcio: quais questões precisam ser analisadas antes da separação?</h3>
+      <p>
+        O divórcio envolve decisões que vão além do encerramento
+        do casamento. Patrimônio, dívidas, filhos e organização
+        financeira merecem análise cuidadosa.
+      </p>
+      <a href="#sobre">Conheça nossa atuação</a>
+    </article>
+
+    <article class="article" data-category="partilha">
+      <small>Partilha de bens</small>
+      <h3>Como funciona a partilha de bens no divórcio?</h3>
+      <p>
+        O regime de bens adotado no casamento influencia
+        diretamente a análise do patrimônio adquirido durante
+        a relação.
+      </p>
+      <a href="#sobre">Conheça nossa atuação</a>
+    </article>
+
+    <article class="article" data-category="alimentos">
+      <small>Pensão alimentícia</small>
+      <h3>Como é definido o valor da pensão alimentícia?</h3>
+      <p>
+        A fixação dos alimentos considera as necessidades de
+        quem recebe e as possibilidades de quem paga,
+        conforme as circunstâncias do caso.
+      </p>
+      <a href="#sobre">Conheça nossa atuação</a>
+    </article>
+
+    <article class="article" data-category="sucessoes">
+      <small>Sucessões</small>
+      <h3>Seu marido faleceu e deixou filhos de outro relacionamento. Quais são seus direitos?</h3>
+      <p>
+        A sucessão exige análise do regime de bens, da existência
+        de patrimônio particular e comum e da composição familiar.
+      </p>
+      <a href="#sobre">Conheça nossa atuação</a>
+    </article>
+
+    <article class="article" data-category="guarda">
+      <small>Guarda e convivência</small>
+      <h3>Guarda compartilhada significa divisão igual do tempo?</h3>
+      <p>
+        Guarda compartilhada e divisão matemática do tempo
+        de convivência são conceitos diferentes. O planejamento
+        deve considerar o melhor interesse da criança.
+      </p>
+      <a href="#sobre">Conheça nossa atuação</a>
+    </article>
+
+    <article class="article" data-category="sucessoes">
+      <small>Planejamento sucessório</small>
+      <h3>Por que o planejamento sucessório merece atenção?</h3>
+      <p>
+        Organizar a transmissão do patrimônio em vida pode
+        contribuir para decisões familiares mais conscientes
+        e para a prevenção de conflitos.
+      </p>
+      <a href="#sobre">Conheça nossa atuação</a>
+    </article>
+
+  </section>
+
+  <p id="sem-resultados" hidden>
+    Nenhum artigo encontrado para essa pesquisa.
+  </p>
+
+  <section class="about" id="sobre">
+    <h2>Clóvis Reis Advocacia</h2>
+    <p>
+      Atuação em Direito das Famílias e Sucessões,
+      com sede em Juazeiro, Bahia, e atendimento online
+      para Petrolina, Pernambuco, e outras localidades.
+    </p>
+    <p>
+      Informação jurídica, análise técnica e atendimento
+      pautado pela responsabilidade profissional.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>CLÓVIS REIS ADVOCACIA</p>
+  <p>Direito das Famílias e Sucessões</p>
+
+  <p>
+    <a href="https://www.instagram.com/mgabireis/"
+       target="_blank" rel="noopener">
+       @mgabireis
+    </a>
+
+    <a href="https://www.instagram.com/clovisreisadvocacia/"
+       target="_blank" rel="noopener">
+       @clovisreisadvocacia
+    </a>
+  </p>
+
+  <p>© 2026 Clóvis Reis Advocacia. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+const busca = document.getElementById("busca");
+const artigos = document.querySelectorAll(".article");
+const botoes = document.querySelectorAll(".categories button");
+const semResultados = document.getElementById("sem-resultados");
+
+let categoriaAtual = "todos";
+
+function filtrar() {
+  const termo = busca.value.toLowerCase().trim();
+  let encontrados = 0;
+
+  artigos.forEach(artigo => {
+    const texto = artigo.innerText.toLowerCase();
+    const categoria = artigo.dataset.category;
+
+    const correspondeTexto = texto.includes(termo);
+    const correspondeCategoria =
+      categoriaAtual === "todos" ||
+      categoria === categoriaAtual;
+
+    const mostrar = correspondeTexto && correspondeCategoria;
+
+    artigo.hidden = !mostrar;
+
+    if (mostrar) encontrados++;
+  });
+
+  semResultados.hidden = encontrados !== 0;
+}
+
+busca.addEventListener("input", filtrar);
+
+botoes.forEach(botao => {
+  botao.addEventListener("click", () => {
+    botoes.forEach(b => b.classList.remove("active"));
+    botao.classList.add("active");
+
+    categoriaAtual = botao.dataset.category;
+    filtrar();
+  });
+});
+</script>
+
 </body>
 </html>
